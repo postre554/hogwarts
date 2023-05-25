@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:postre554/hogwarts.git" # dirección al repositor
 
 set :user, 'deploy'
 set :ssh_options, {
-    forward_agemt: true,
+    forward_agent: true,
     auth_methods: ['publickey'],
     keys: ['~/.ssh/aws_app_rails.pem']
 }
