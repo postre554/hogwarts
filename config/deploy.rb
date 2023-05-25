@@ -8,7 +8,7 @@ set :user, 'deploy'
 set :ssh_options, {
     forward_agemt: true,
     auth_methods: ['publickey'],
-    keys: ['~/ssh/aws_app_rails.pem']
+    keys: ['~/.ssh/aws_app_rails.pem']
 }
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
