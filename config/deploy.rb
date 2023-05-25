@@ -4,6 +4,12 @@ lock "~> 3.17.3"
 set :application, "myapp" # nombre de la aplicación
 set :repo_url, "git@github.com:postre554/hogwarts.git" # dirección al repositorio
 
+set :user, 'deploy'
+set :ssh_options, {
+    forward_agemt: true,
+    auth_methods: ['publickey'],
+    keys: ['~/ssh/aws_app_rails.pem']
+}
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
