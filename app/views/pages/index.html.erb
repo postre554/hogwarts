@@ -1,2 +1,13 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h2>Listado de Personajes</h2>
+
+<% @characters.each do |character| %>
+  <div class="bg-dark m-3 ">
+    <h4>Nombre:<%= character.name %></h4>
+    <p><strong>Ubicacion:</strong> <%= character.location %></p>
+    <p>Casa: <%= character.house %></p>
+  </div>
+  <hr>
+<% end %>
+
+
+<h3><%= pages_index_path %></h3>

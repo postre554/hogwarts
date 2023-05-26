@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+    font-family: "potter";
+    src: url("HARRYP__.TTF") format("truetype");
+}
+
+ body {
+    background-color: #232129;  
+    color: #FFF;  
+  }
+
+  .jumbotron {
+    background-color: #2e2f30;
+  }
+
+  h1, h2, h3 {
+    font-size: 48px;
+    font-family: "potter";
+    background-image: linear-gradient(to right, gold, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(218, 205, 205, 0.5);
+  }
+
+  .yt {
+    background-color: #8B4513;  
+    border-color: #8B4513;
+    color: burlywood;
+  }
+
+  .yt:hover {
+    background-color: #462408;  
+    border-color: #302e2d;
+  }
+  .yt.active,
+  .yt:focus {
+    color: burlywood;
+    background-color: #4e0542;  
+    border-color: #302e2d;
+  }
+ 
+  @font-face {
+    font-family: "NombreDeLaFuente";
+    src: url("ruta/a/tu/fuente.ttf") format("truetype");
+  }
