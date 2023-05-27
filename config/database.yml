@@ -85,6 +85,8 @@ test:
 #
 production:
   <<: *default
-  database: hogwarts_rails_production
-  username: hogwarts_rails
-  password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
+  # database: hogwarts_rails_production
+  # username: hogwarts_rails
+  # password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
