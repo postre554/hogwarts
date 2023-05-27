@@ -1,4 +1,4 @@
-#!/usr/bin/end bash
+#!/bin/end bash
 
 #exit on error
 
