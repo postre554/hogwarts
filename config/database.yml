@@ -78,15 +78,14 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-#     url: <%= ENV["MY_APP_DATABASE_URL"] %>
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
   <<: *default
-  url: <%= ENV['postgres://vitaminc:aOfOGfKDwhygg3qJukcEMmPDWogcZzaB@dpg-chp4rlik728ivvt62ii0-a/hogwarts_rails_s7jr'] %>
-
-  # database: hogwarts_rails_production
-  # username: hogwarts_rails
-  # password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: hogwarts_rails_production
+  username: hogwarts_rails
+  password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
