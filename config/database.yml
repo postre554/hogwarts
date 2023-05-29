@@ -85,7 +85,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['MY_APP_DATABASE_URL'] %>
   database: myapp
   username: postgres
-  password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
+  password: <%= ENV["MY_APP_DATABASE_PASSWORD"] %>
