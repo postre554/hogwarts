@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
+  username: deploy
   password: Copihues12345
   host: 127.0.0.1
   port: 5432
