@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: deploy
+  username: postgres
   password: Copihues12345
   host: 127.0.0.1
   port: 5432
@@ -78,7 +78,7 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-  url: <%= ENV["MY_APP_DATABASE_URL"] %>
+# url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
@@ -86,6 +86,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: hogwarts_rails_production
-  username: vitaminc
+  database: myapp
+  username: postgres
   password: <%= ENV["HOGWARTS_RAILS_DATABASE_PASSWORD"] %>
